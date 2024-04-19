@@ -13,7 +13,7 @@ export default function Popup() {
     const [payload, setPayload] = useState({
         id: '',
         name:'',
-        price: 0,
+        price: '',
         category: '',
         description: ''
     })
@@ -27,7 +27,7 @@ export default function Popup() {
             setPayload({
                 id: id,
                 name: '',
-                price: 0,
+                price: '',
                 category: '',
                 description: ''
             });
