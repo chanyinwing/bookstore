@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { show, hide, bookId } from '../slice/showPopup'
 import { addBook, editBook } from '../slice/book';
-import { v4 as uuidv4 } from 'uuid';
 
 export default function Popup() {
 
