@@ -1,0 +1,121 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  height:100vh;
+}
+
+.card {
+  padding: 2em;
+}
+
+.popupbkgrd{
+  position:fixed;
+  top: 0;
+  right:0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ddd;
+  opacity: 0.5;
+
+}
+
+.popup{
+  width: 30%;
+  height: 50%;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  border: 1px white solid;
+  overflow: overlay;
+}
+
+.head{
+  display: flex;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin:6rem; */
+  text-align: left;
+  width: 100%;
+}
+
+.form  div{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+input{
+  margin: 1rem 0;
+  height: 30px;
+  width: 90%;
+}
+
+textarea{
+  margin: 1rem 0;
+  height: 60px;
+  width: 90%;
+  resize: vertical;
+}
+
+.disable{
+  opacity: 0;
+  height:0;
+}
+
+.closeBtn{
+  cursor: pointer;
+  position: relative;
+  margin-right:2rem;
+}
+
+#bookList {
+  width: 100%;
+}
+#bookList tr {
+  cursor: pointer;
+}
+
+#bookList td:nth-child(1), th:nth-child(1){
+  width: 60%
+}
+
+#bookList td:nth-child(4){
+  border: 0px;
+}
+
+
+#bookList td:nth-child(4):hover{
+  color: rgb(201, 69, 69);
+  font-size: 700;
+  transition: 0.25s;
+}
+
+#bookList td, #bookList th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#bookList th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  cursor: auto;
+}
+
+#bookList p {
+  margin-left: 1rem;
+  cursor: pointer;
+}
